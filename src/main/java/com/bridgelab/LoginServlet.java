@@ -25,6 +25,8 @@ public class LoginServlet extends HttpServlet {
                 String user = req.getParameter("user");
                 String pwd = req.getParameter("pwd");
 
+                String regexName = "^[A-Z]{1}[a-zA-Z]{2,}$";
+
                 String userID = getServletConfig().getInitParameter("user");
                 String password = getServletConfig().getInitParameter("password");
 
